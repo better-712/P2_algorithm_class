@@ -85,20 +85,19 @@ if __name__ == '__main__':
     execution_times_1 = normalized_factor * execution_times_1
     # print(execution_times_1)
 
-    # 绘制理论执行时间
+    
     plt.plot(input_sizes, execution_times_1, marker='o', label='Adj Theory Time')
 
-    # 绘制实际执行时间
+
     plt.plot(input_sizes, execution_times_2, marker='x', label='Actual Execution Time')
 
-    # 添加标签和标题
     plt.xlabel('Input size (n)')
     plt.ylabel('Execution time (seconds)')
     plt.title('Execution Time vs Input Size for Kruskal Algorithm')
 
-    # 添加网格和图例
+   
     plt.grid(True)
     plt.legend()
 
-    # 显示图表
+    
     plt.show()
